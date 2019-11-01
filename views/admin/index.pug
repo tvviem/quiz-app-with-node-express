@@ -1,0 +1,193 @@
+extends ../layouts/common
+block content
+  nav.navbar.is-white
+    .container
+      .navbar-brand
+        a.navbar-item.brand-text(href='../index.html')
+          | Reviewing your knowledge
+        .navbar-burger.burger.is-active(data-target='navMenu')
+          span
+          span
+          span
+      #navMenu.navbar-menu.is-active
+        .navbar-start
+          a.navbar-item(href='admin.html')
+            | Tổng quan
+          a.navbar-item(href='admin.html')
+            | Lịch sử
+          a.navbar-item(href='admin.html')
+            | Tìm kiếm
+          a.navbar-item(href='admin.html')
+            | Báo cáo
+  .container
+    .columns
+      .column.is-3
+        aside.menu.is-hidden-mobile
+          p.menu-label
+            | Quản lý chung
+          ul.menu-list
+            li
+              a.is-active Tổng quan
+            li
+              a(href='./manage-users') Người dùng
+            li
+              a Câu hỏi
+          p.menu-label
+            | Đặc quyền
+          ul.menu-list
+            li
+              a Truy cập
+            li
+              a Câu hỏi
+              ul
+                li
+                  a Thêm câu hỏi
+                li
+                  a Tìm sửa/xóa
+          //- p.menu-label
+          //-   | Transactions
+          //- ul.menu-list
+          //-   li
+          //-     a Payments
+          //-   li
+          //-     a Transfers
+          //-   li
+          //-     a Balance
+          //-   li
+          //-     a Reports
+      .column.is-9
+        //- nav.breadcrumb(aria-label='breadcrumbs')
+        //-   ul
+        //-     li
+        //-       a(href='../') Bulma
+        //-     li
+        //-       a(href='../') Templates
+        //-     li
+        //-       a(href='../') Examples
+        //-     li.is-active
+        //-       a(href='#', aria-current='page') Admin
+        section.hero.is-info.welcome.is-small
+          .hero-body
+            .container
+              h1.title
+                | Hello, Admin.
+              h2.subtitle
+                | Hôm nay đã có 15 lượt người dùng tham gia kiểm tra 
+        section.info-tiles
+          .tile.is-ancestor.has-text-centered
+            .tile.is-parent
+              article.tile.is-child.box
+                p.title 439k
+                p.subtitle Sinh viên
+            .tile.is-parent
+              article.tile.is-child.box
+                p.title 59k
+                p.subtitle Câu hỏi
+            .tile.is-parent
+              article.tile.is-child.box
+                p.title 3.4k
+                p.subtitle Giảng viên
+            .tile.is-parent
+              article.tile.is-child.box
+                p.title 19
+                p.subtitle Bộ câu hỏi
+        .columns
+          .column.is-6
+            .card.events-card
+              header.card-header
+                p.card-header-title
+                  | Lịch sử thao tác
+                a.card-header-icon(href='#', aria-label='more options')
+                  span.icon
+                    i.fa.fa-angle-down(aria-hidden='true')
+              .card-table
+                .content
+                  table.table.is-fullwidth.is-striped
+                    tbody
+                      tr
+                        td(width='5%')
+                          i.fa.fa-bell-o
+                        td Lorum ipsum dolem aire
+                        td.level-right
+                          a.button.is-small.is-primary(href='#') Action
+                      tr
+                        td(width='5%')
+                          i.fa.fa-bell-o
+                        td Lorum ipsum dolem aire
+                        td.level-right
+                          a.button.is-small.is-primary(href='#') Action
+                      tr
+                        td(width='5%')
+                          i.fa.fa-bell-o
+                        td Lorum ipsum dolem aire
+                        td.level-right
+                          a.button.is-small.is-primary(href='#') Action
+                      tr
+                        td(width='5%')
+                          i.fa.fa-bell-o
+                        td Lorum ipsum dolem aire
+                        td.level-right
+                          a.button.is-small.is-primary(href='#') Action
+                      tr
+                        td(width='5%')
+                          i.fa.fa-bell-o
+                        td Lorum ipsum dolem aire
+                        td.level-right
+                          a.button.is-small.is-primary(href='#') Action
+                      tr
+                        td(width='5%')
+                          i.fa.fa-bell-o
+                        td Lorum ipsum dolem aire
+                        td.level-right
+                          a.button.is-small.is-primary(href='#') Action
+                      tr
+                        td(width='5%')
+                          i.fa.fa-bell-o
+                        td Lorum ipsum dolem aire
+                        td.level-right
+                          a.button.is-small.is-primary(href='#') Action
+                      tr
+                        td(width='5%')
+                          i.fa.fa-bell-o
+                        td Lorum ipsum dolem aire
+                        td.level-right
+                          a.button.is-small.is-primary(href='#') Action
+                      tr
+                        td(width='5%')
+                          i.fa.fa-bell-o
+                        td Lorum ipsum dolem aire
+                        td.level-right
+                          a.button.is-small.is-primary(href='#') Action
+              footer.card-footer
+                a.card-footer-item(href='#') View All
+          .column.is-6
+            .card
+              header.card-header
+                p.card-header-title
+                  | Tìm câu hỏi
+                a.card-header-icon(href='#', aria-label='more options')
+                  span.icon
+                    i.fa.fa-angle-down(aria-hidden='true')
+              .card-content
+                .content
+                  .control.has-icons-left.has-icons-right
+                    input.input.is-large(type='text', placeholder='')
+                    span.icon.is-medium.is-left
+                      i.fa.fa-search
+                    span.icon.is-medium.is-right
+                      i.fa.fa-check
+            .card
+              header.card-header
+                p.card-header-title
+                  | Tìm người dùng
+                a.card-header-icon(href='#', aria-label='more options')
+                  span.icon
+                    i.fa.fa-angle-down(aria-hidden='true')
+              .card-content
+                .content
+                  .control.has-icons-left.has-icons-right
+                    input.input.is-large(type='text', placeholder='')
+                    span.icon.is-medium.is-left
+                      i.fa.fa-search
+                    span.icon.is-medium.is-right
+                      i.fa.fa-check

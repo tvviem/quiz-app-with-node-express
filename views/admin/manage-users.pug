@@ -1,0 +1,48 @@
+extends ../layouts/common
+block content
+  nav.navbar.is-white
+    .container
+      .navbar-brand
+        a.navbar-item.brand-text(href='../index.html')
+          | Reviewing your knowledge
+        .navbar-burger.burger.is-active(data-target='navMenu')
+          span
+          span
+          span
+      #navMenu.navbar-menu.is-active
+        .navbar-start
+          a.navbar-item(href='admin.html')
+            | Tổng quan
+          a.navbar-item(href='admin.html')
+            | Lịch sử
+          a.navbar-item(href='admin.html')
+            | Tìm kiếm
+          a.navbar-item(href='admin.html')
+            | Báo cáo
+  .container
+    .columns
+      .column.is-3
+        aside.menu.is-hidden-mobile
+          p.menu-label
+            | Quản lý chung
+          ul.menu-list
+            li
+              a.is-active Tổng quan
+            li
+              a Người dùng
+            li
+              a Câu hỏi
+          p.menu-label
+            | Đặc quyền
+          ul.menu-list
+            li
+              a Truy cập
+            li
+              a Câu hỏi
+              ul
+                li
+                  a Thêm câu hỏi
+                li
+                  a Tìm sửa/xóa
+      .column.is-9
+        
